@@ -29,7 +29,6 @@ func getClient() mqtt.Client {
 
     opts.AddBroker(fmt.Sprintf("tcp://%s:%d", broker, port))
     opts.SetUsername(brokerToken)
-    // opts.SetUsername("iciyju6i11eho9bi2u78")
 
     opts.OnConnect = connectHandler
     opts.OnConnectionLost = connectLostHandler
